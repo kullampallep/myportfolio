@@ -9,122 +9,78 @@ import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterk
 
 export const products = [
   {
-    href: "https://aceternity.com",
-    title: "Aceternity",
+    href: "https://github.com/anjalipag/group14-database-project",
+    title: "Tune In",
     description:
-      "A design and development studio that focuses on building quality apps.",
+      "Introducing TuneIn - a social recommendation platform where people create groups based on shared interests and post recommendations for movies, TV shows, music, and books.",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "aceternity",
+    stack: ["Python", "dJango", "PostgreSQL"],
+    slug: "tunein",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <ul>
+          <li>Built a group-based recommendation web app with a team using Django, PostgreSQL, and Python.</li>
+          <li>Implemented features like user auth, group management, commenting, and recommendation posts with role-based access.</li>
+          <li>Integrated external APIs to populate books, movies, TV shows and music.</li>
+        </ul> {" "}
       </div>
     ),
   },
   {
-    href: "https://algochurn.com",
-    title: "Algochurn",
+    href: "https://github.com/kullampallep/insight.ed",
+    title: "Insight.Ed",
     description:
-      "Practice for technical interviews with hands on coding challenges.",
+      "Insight.Ed is a school rating platform powered by Machine Learning. This projects analyzes Virginia public schools and categorizes schools based on student success rates.",
     thumbnail: sidefolioAlgochurn,
     images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "algochurn",
+    stack: ["Python", "scikit-learn", "Anvil"],
+    slug: "insight.ed",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <ul>
+          <li>Built a machine learning pipeline to analyze and cluster Virginia public schools based on 30+ academic, funding, and demographic features.</li>
+          <li>Engineered a custom 10-point school rating system using K-Means clustering and correlation-weighted scoring.</li>
+          <li>Trained logistic regression classifier to predict school rating with ~95% accuracy.</li>
+          <li>Developed a front-end using Anvil connected to Google Colab, enabling educators to view ratings and enter data about a school for real time rating prediction</li>
+        </ul> {" "}
       </div>
     ),
   },
   {
-    href: "https://gomoonbeam.com",
-    title: "Moonbeam",
+    href: "https://devpost.com/software/wander-vjhdyn",
+    title: "Wander",
     description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
+      "Wander is a machine learning-powered travel app that curates personalized city attraction recommendations based on your past likes and dislikes, continuously learning from your feedback to enhance future trip suggestions.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
+    stack: ["Nextjs", "Tailwindcss", "Anvil"],
+    slug: "wander",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <ul>
+          <li>Developed Wander, a machine learning–based travel app that recommends city attractions based on users past interests during a hackathon.</li>
+          <li>Curated a custom dataset of tourist spots using Generative AI and trained models in Google Colab with scikit-learn and TensorFlow.</li>
+          <li>Built a dynamic web app using Anvil to collect user feedback and refine recommendations in real time.</li>
+        </ul> {" "}
       </div>
     ),
   },
   {
-    href: "https://tailwindmasterkit.com",
-    title: "Tailwind Master Kit",
+    href: "https://github.com/schelimilla/UNO-Her",
+    title: "Uno-her",
     description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
+      "Uno-Her: Women In Tech Edition, a spin off of the classic game Uno with the primary goal of educating players about influential women in computer science history.",
     thumbnail: sidefolioTailwindMasterKit,
     images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
+    stack: ["python"],
+    slug: "unoher",
     content: (
       <div>
-        <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
-        </p>
-        <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+        <ul>
+          <li>Developed an educational Uno-style game, Uno-Her, using Python and Pygame, featuring an interactive GUI and automated computer opponent logic during a hackathon.</li>
+          <li>Implemented event-driven programming to handle user interactions, including card selection and turn-based gameplay updates.</li>
+        </ul> {" "}
       </div>
     ),
   },
