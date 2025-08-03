@@ -12,9 +12,8 @@ export default function Home() {
       <span className="text-4xl">💼</span>
       <Heading className="font-black">Work History</Heading>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a full-stack developer that loves{" "}
-        <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
+        I&apos;m passionate about creating{" "}
+        <Highlight>tech solutions</Highlight> that solve real world problems and harness the power of new technologies, design, and the human experience. 
       </Paragraph>
       <WorkHistory />
     </Container>

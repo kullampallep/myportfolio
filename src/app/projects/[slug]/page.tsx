@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   } else {
     return {
-      title: "Projects | John Doe",
+      title: "Projects | Pravallika Kullampalle",
       description:
-        "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+          "Pravallika Kullampalle is currently learning. She is passionate about the intersection of technology, business, and the human experience.",
     };
   }
 }

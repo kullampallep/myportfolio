@@ -6,47 +6,55 @@ import { twMerge } from "tailwind-merge";
 export const TechStack = () => {
   const stack = [
     {
-      title: "Next.js",
-      src: "/images/logos/next.png",
-
+      title: "Python",
+      src: "/images/logos/python.webp",
       className: "h-10 w-14",
     },
     {
-      title: "AWS",
-      src: "/images/logos/aws.webp",
+      title: "Java",
+      src: "/images/logos/java.png",
+      className: "h-10 w-10",
+    },
+    {
+      title: "SQL",
+      src: "/images/logos/sql.png",
 
       className: "h-10 w-10",
     },
     {
-      title: "Figma",
-      src: "/images/logos/figma.png",
+      title: "scikit_learn",
+      src: "/images/logos/scikit_learn.png",
 
-      className: "h-10 w-8",
+      className: "h-10 w-10",
     },
+
     {
-      title: "Framer Motion",
-      src: "/images/logos/framer.webp",
+      title: "React",
+      src: "/images/logos/react.png",
 
       className: "h-10 w-10",
     },
     {
-      title: "Node",
-      src: "/images/logos/node.png",
-
-      className: "h-10 w-12",
+      title: "Next.js",
+      src: "/images/logos/next.png",
+      className: "h-10 w-14",
     },
     {
       title: "Tailwind",
       src: "/images/logos/tailwind.png",
-
       className: "h-10 w-24",
     },
     {
       title: "Vercel",
       src: "/images/logos/vercel.png",
-
       className: "h-10 w-24",
     },
+    {
+      title: "Figma",
+      src: "/images/logos/figma.png",
+      className: "h-10 w-8",
+    },
+    
   ];
   return (
     <div>
