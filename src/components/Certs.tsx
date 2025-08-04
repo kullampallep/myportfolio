@@ -40,7 +40,7 @@ export const Certs = () => {
             width={`800`}
             height={`800`}
             alt={item.title}
-            className={twMerge("object-contain mr-4 mb-4", item.className)}
+            className={twMerge("object-contain mr-4 ", item.className)}
             title={item.title}
           />
 

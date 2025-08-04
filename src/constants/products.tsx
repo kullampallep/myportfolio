@@ -9,6 +9,24 @@ import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterk
 
 export const products = [
   {
+    href: "https://github.com/Hootanica/Hootanica",
+    title: "Hootanica",
+    description:
+      "Hootanica is a Mobile Application that allows you to keep track of house plants, and manage watering cycles.",
+    thumbnail: sidefolioAceternity,
+    images: [sidefolioAceternity, sidefolioAceternity2],
+    stack: ["react-native"],
+    slug: "hootanica",
+    content: (
+      <div>
+        <ul>
+          <li>Designed and built a mobile app interface in React Native for logging and managing personalized plant care data, including watering schedules, soil and sunlight needs, and disease history.</li>
+          <li>Created a calendar view to track watering tasks and implemented intuitive multi-screen navigation with onboarding and help features.</li>
+        </ul> {" "}
+      </div>
+    ),
+  },
+  {
     href: "https://github.com/anjalipag/group14-database-project",
     title: "Tune In",
     description:
@@ -54,7 +72,7 @@ export const products = [
       "Wander is a machine learning-powered travel app that curates personalized city attraction recommendations based on your past likes and dislikes, continuously learning from your feedback to enhance future trip suggestions.",
     thumbnail: sidefolioMoonbeam,
     images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss", "Anvil"],
+    stack: ["scikit-learn", "Python", "Anvil"],
     slug: "wander",
     content: (
       <div>
@@ -68,12 +86,12 @@ export const products = [
   },
   {
     href: "https://github.com/schelimilla/UNO-Her",
-    title: "Uno-her",
+    title: "Uno-Her",
     description:
       "Uno-Her: Women In Tech Edition, a spin off of the classic game Uno with the primary goal of educating players about influential women in computer science history.",
     thumbnail: sidefolioTailwindMasterKit,
     images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
-    stack: ["python"],
+    stack: ["Python"],
     slug: "unoher",
     content: (
       <div>
