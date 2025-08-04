@@ -4,10 +4,15 @@ import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
-import { Certs } from "@/components/Certs"
+import { Certs } from "@/components/Certs";
+import { useEffect } from "react";
+import posthog from "posthog-js";
 import Image from "next/image";
 
 export default function Home() {
+
+  
+
   return (
     <Container>
       <div className="flex flex-row items-start gap-6 items-center">

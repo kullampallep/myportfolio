@@ -3,8 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
-import { Footer } from "@/components/Footer";
 import { PostHogProvider } from "@/components/PostHogProvider";
+import { PostHogInit } from "./posthog-init";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +31,8 @@ export default function RootLayout({
           "flex antialiased h-screen overflow-hidden bg-gray-100"
         )}
       >
+        <PostHogInit />
+
         <PostHogProvider>
           <Sidebar />
           <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
@@ -39,6 +42,8 @@ export default function RootLayout({
             </div>
           </div>
         </PostHogProvider>
+
+
       </body>
     </html>
   );
