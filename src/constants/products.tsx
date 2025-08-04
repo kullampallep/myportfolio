@@ -7,16 +7,46 @@ import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
 import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
 import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
 
+import wander1 from "public/images/Wander_1.png";
+import wander2 from "public/images/Wander_2.png";
+import wander3 from "public/images/Wander_3.png";
+import wander4 from "public/images/Wander_4.png";
+import wander5 from "public/images/Wander_5.png";
+
+import unoher1 from "public/images/UnoHer_1.png";
+import unoher2 from "public/images/UnoHer_2.png";
+import unoher3 from "public/images/UnoHer_3.png";
+
+import tunein1 from "public/images/tunein_1.jpg";
+
+import insight1 from "public/images/insight_1.jpg";
+import insight2 from "public/images/insight_2.jpg";
+import insight3 from "public/images/insight_3.jpg";
+import insight4 from "public/images/insight_4.jpg";
+
+import hootanica1 from "public/images/Hootanica_1.png";
+import hootanica2 from "public/images/Hootanica_2.png";
+import hootanica3 from "public/images/Hootanica_3.png";
+import hootanica4 from "public/images/Hootanica_4.png";
+
+
+
+
+
+
+
+
 export const products = [
   {
     href: "https://github.com/Hootanica/Hootanica",
     title: "Hootanica",
     description:
       "Hootanica is a Mobile Application that allows you to keep track of house plants, and manage watering cycles.",
-    thumbnail: sidefolioAceternity,
-    images: [sidefolioAceternity, sidefolioAceternity2],
+    thumbnail: hootanica4,
+    images: [hootanica1, hootanica2, hootanica3],
     stack: ["react-native"],
     slug: "hootanica",
+    demo: "https://drive.google.com/file/d/14aLaUG7tnITPChjimAJI-TL6F3GnagCv/view?usp=sharing",
     content: (
       <div>
         <ul>
@@ -31,10 +61,11 @@ export const products = [
     title: "Tune In",
     description:
       "Introducing TuneIn - a social recommendation platform where people create groups based on shared interests and post recommendations for movies, TV shows, music, and books.",
-    thumbnail: sidefolioAceternity,
-    images: [sidefolioAceternity, sidefolioAceternity2],
+    thumbnail: tunein1,
+    images: [tunein1],
     stack: ["Python", "dJango", "PostgreSQL"],
     slug: "tunein",
+    demo: "",
     content: (
       <div>
         <ul>
@@ -50,10 +81,11 @@ export const products = [
     title: "Insight.Ed",
     description:
       "Insight.Ed is a school rating platform powered by Machine Learning. This projects analyzes Virginia public schools and categorizes schools based on student success rates.",
-    thumbnail: sidefolioAlgochurn,
-    images: [sidefolioAlgochurn, sidefolioAlgochurn2],
+    thumbnail: insight1,
+    images: [insight3, insight4, insight2],
     stack: ["Python", "scikit-learn", "Anvil"],
     slug: "insight.ed",
+    demo: "https://m.youtube.com/watch?v=wMsCJockrus",
     content: (
       <div>
         <ul>
@@ -70,10 +102,11 @@ export const products = [
     title: "Wander",
     description:
       "Wander is a machine learning-powered travel app that curates personalized city attraction recommendations based on your past likes and dislikes, continuously learning from your feedback to enhance future trip suggestions.",
-    thumbnail: sidefolioMoonbeam,
-    images: [sidefolioMoonbeam, sidefolioMoonbeam2],
+    thumbnail: wander1,
+    images: [wander1, wander2, wander4],
     stack: ["scikit-learn", "Python", "Anvil"],
     slug: "wander",
+    demo: "https://devpost.com/software/wander-vjhdyn",
     content: (
       <div>
         <ul>
@@ -89,10 +122,11 @@ export const products = [
     title: "Uno-Her",
     description:
       "Uno-Her: Women In Tech Edition, a spin off of the classic game Uno with the primary goal of educating players about influential women in computer science history.",
-    thumbnail: sidefolioTailwindMasterKit,
-    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    thumbnail: unoher1,
+    images: [unoher1, unoher2, unoher3],
     stack: ["Python"],
     slug: "unoher",
+    demo: "https://devpost.com/software/uno-her",
     content: (
       <div>
         <ul>

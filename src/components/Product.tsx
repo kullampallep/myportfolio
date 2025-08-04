@@ -28,13 +28,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         key={product.slug}
         className="relative"
       >
-        <Image
-          src={activeImage}
-          alt="thumbnail"
-          height="1000"
-          width="1000"
-          className="rounded-md object-contain"
-        />
+        
         <div className="absolute bottom-0 bg-white h-40 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
       </motion.div>
       <div className="flex flex-row justify-center my-8 flex-wrap">
@@ -48,7 +42,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
               alt="product thumbnail"
               height="1000"
               width="1000"
-              className="h-14 w-16 md:h-40 md:w-60 object-cover object-top mr-4 mb-r border rounded-lg border-neutral-100"
+              className="h-32 w-auto md:h-40 md:w-60 object-contain object-top mr-4 mb-r border border-neutral-100"
             />
           </button>
         ))}
@@ -73,29 +67,57 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         {product?.content}
       </div>
 
-      <a
-        href={product.href}
-        target="__blank"
-        className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
-      >
-        View Here
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
-        >
-          <path d="M5 12l14 0"></path>
-          <path d="M13 18l6 -6"></path>
-          <path d="M13 6l6 6"></path>
-        </svg>
-      </a>
-    </div>
+
+      <div className="flex space-x-4">
+  <a
+    href={product.href}
+    target="__blank"
+    className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
+  >
+    View Here
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
+    >
+      <path d="M5 12l14 0"></path>
+      <path d="M13 18l6 -6"></path>
+      <path d="M13 6l6 6"></path>
+    </svg>
+  </a>
+
+{product.demo && ( <a
+    href={product.demo}
+    target="__blank"
+    className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
+  >
+    Watch Demo
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
+    >
+      <path d="M5 12l14 0"></path>
+      <path d="M13 18l6 -6"></path>
+      <path d="M13 6l6 6"></path>
+    </svg>
+  </a>
+  )}
+</div>
+      </div>
   );
 };

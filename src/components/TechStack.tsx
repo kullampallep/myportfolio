@@ -34,21 +34,13 @@ export const TechStack = () => {
 
       className: "h-10 w-10",
     },
-    {
-      title: "Next.js",
-      src: "/images/logos/next.png",
-      className: "h-10 w-14",
-    },
+    
     {
       title: "Tailwind",
       src: "/images/logos/tailwind.png",
       className: "h-10 w-24",
     },
-    {
-      title: "Vercel",
-      src: "/images/logos/vercel.png",
-      className: "h-10 w-24",
-    },
+    
     {
       title: "Figma",
       src: "/images/logos/figma.png",
