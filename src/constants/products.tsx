@@ -24,6 +24,7 @@ import insight2 from "public/images/insight_2.jpg";
 import insight3 from "public/images/insight_3.jpg";
 import insight4 from "public/images/insight_4.jpg";
 
+import hootanica0 from "public/images/Hootanica_0.png";
 import hootanica1 from "public/images/Hootanica_1.png";
 import hootanica2 from "public/images/Hootanica_2.png";
 import hootanica3 from "public/images/Hootanica_3.png";
@@ -42,7 +43,7 @@ export const products = [
     title: "Hootanica",
     description:
       "Hootanica is a Mobile Application that allows you to keep track of house plants, and manage watering cycles.",
-    thumbnail: hootanica4,
+    thumbnail: hootanica0,
     images: [hootanica1, hootanica2, hootanica3],
     stack: ["react-native"],
     slug: "hootanica",

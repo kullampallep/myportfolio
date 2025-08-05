@@ -54,6 +54,9 @@ export default function Home() {
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
       >
         What I&apos;ve been working on
+
+        <p className="text-gray-400 font-semibold mb-10">Click on each project to learn more!</p>
+
       </Heading>
       <Products />
     </Container>
