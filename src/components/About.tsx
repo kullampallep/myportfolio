@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const images = [
-    '/images/sunset.JPG',
+    '/images/girlwhocodes.png',
     '/images/dance.jpeg',
     '/images/uva.jpg',
     '/images/photography.JPG'
@@ -73,7 +73,7 @@ export default function About() {
         <Paragraph className=" mt-4">
           Hi there, thanks for stopping by! I’m Pravallika Kullampalle, 
           a computer science student at the University of Virginia, 
-          graduating in December 2025 with a minor in business from the McIntire School of Commerce.
+          graduating in December 2025 with a minor in business from the McIntire School of Commerce. I am currently looking for new grad roles in Software Engineering!
 
         </Paragraph>
         <Paragraph className=" mt-4">
