@@ -31,14 +31,14 @@ export const Sidebar = () => {
             <div className="overflow-auto">
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
-            </div>
 
             {/* Bottom fixed button */}
-            <div
-              className="pt-4"
-              onClick={() => isMobile() && setOpen(false)}
-            >
-              <Badge href="/resume" text="Read Resume" />
+              <div
+              
+                onClick={() => isMobile() && setOpen(false)}
+              >
+                <Badge href="/resume" text="Read Resume" />
+              </div>
             </div>
           </motion.div>
         )}
