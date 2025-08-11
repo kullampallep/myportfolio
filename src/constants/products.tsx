@@ -30,14 +30,34 @@ import hootanica2 from "public/images/Hootanica_2.png";
 import hootanica3 from "public/images/Hootanica_3.png";
 import hootanica4 from "public/images/Hootanica_4.png";
 
-
-
-
-
+import portfolio1 from "public/images/portfolio1.png";
 
 
 
 export const products = [
+  {
+    href: "https://github.com/kullampallep/myportfolio",
+    title: "Portfolio Website",
+    description:
+      "Learn more about me, my professional interests, and work experiences through my portfolio website.",
+    thumbnail: portfolio1,
+    images: [portfolio1],
+    stack: ["Next.js, TailwindCSS, Vercel, PostHog"],
+    slug: "portfolio",
+    demo: "",
+    content: (
+     <div>
+  <ul>
+    <li>
+      Customized and enhanced Ascertainy UI Next.js and TailwindCSS template to build a responsive, modern portfolio website.
+    </li>
+    <li>
+      Integrated PostHog analytics for real-time user behavior tracking and data-driven insights and Vercel for deployment.
+    </li>
+  </ul>
+</div>)
+
+  },
   {
     href: "https://github.com/Hootanica/Hootanica",
     title: "Hootanica",
