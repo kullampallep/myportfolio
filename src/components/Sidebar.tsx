@@ -3,7 +3,7 @@ import { navlinks } from "@/constants/navlinks";
 import { Navlink } from "@/types/navlink";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Heading } from "./Heading";
@@ -25,18 +25,26 @@ export const Sidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="px-6  z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
+            className="px-6 z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit fixed lg:relative h-screen left-0 flex flex-col justify-between"
           >
-            <div className="flex-1 overflow-auto">
+            {/* Top scrollable area */}
+            <div className="overflow-auto">
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
+
+            {/* Bottom fixed button */}
+            <div
+              className="pt-4"
+              onClick={() => isMobile() && setOpen(false)}
+            >
               <Badge href="/resume" text="Read Resume" />
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Mobile toggle button */}
       <button
         className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
         onClick={() => setOpen(!open)}
@@ -89,12 +97,7 @@ export const Navigation = ({
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           )}
         >
-          <link.icon
-            className={twMerge(
-              "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
-            )}
-          />
+          <link.icon className="h-4 w-4 flex-shrink-0" />
           <span>{link.label}</span>
         </Link>
       ))}
@@ -106,7 +109,7 @@ const SidebarHeader = () => {
   return (
     <div className="flex space-x-2">
       <Image
-        src='/images/PravallikaHeadShot.jpg'
+        src="/images/PravallikaHeadShot.jpg"
         alt="PravallikaHeadshot"
         height="40"
         width="40"
