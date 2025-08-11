@@ -42,7 +42,7 @@ export const products = [
       "Learn more about me, my professional interests, and work experiences through my portfolio website.",
     thumbnail: portfolio1,
     images: [portfolio1],
-    stack: ["Next.js, TailwindCSS, Vercel, PostHog"],
+    stack: ["Next.js", "TailwindCSS", "Vercel", "PostHog"],
     slug: "portfolio",
     demo: "",
     content: (
