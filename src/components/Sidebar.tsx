@@ -21,12 +21,12 @@ export const Sidebar = () => {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.2, ease: "linear" }}
-            exit={{ x: -200 }}
-            className="px-6 z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit fixed lg:relative h-screen left-0 flex flex-col justify-between"
-          >
+  initial={{ x: '-100%' }}
+  animate={{ x: 0 }}
+  transition={{ duration: 0.2, ease: "linear" }}
+  exit={{ x: '-100%' }}
+  className="px-6 z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit fixed lg:relative h-screen left-0 flex flex-col justify-between"
+>
             {/* Top scrollable area */}
             <div className="overflow-auto">
               <SidebarHeader />
