@@ -6,8 +6,11 @@ export function PostHogInit() {
   useEffect(() => {
     posthog.init('phx_5dJFrBdgyLUbZ3H9YDpJyqBCe1Xo5TwOsztyTIdzRil6HXD', {
   api_host: 'https://app.posthog.com',
-  session_recording: {}, // Enables session recording with default settings
+  session_recording: { maskAllInputs: false, }, // Enables session recording with default settings
 });
+  posthog.startSessionRecording();
+
   }, []);
+
   return null;
 }
